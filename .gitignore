@@ -28,3 +28,5 @@
 hs_err_pid*
 
 # End of https://www.gitignore.io/api/java
+/part01-Part01_05.Message/target/
+/part01-Part01_10.Story/target/
