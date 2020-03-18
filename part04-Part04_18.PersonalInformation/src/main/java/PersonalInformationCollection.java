@@ -10,5 +10,24 @@ public class PersonalInformationCollection {
         ArrayList<PersonalInformation> infoCollection = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 
+        while (true) {
+            System.out.print("First name: ");
+            String firstName = scanner.nextLine();
+            
+            if (firstName.isEmpty()) {
+                break;
+            }
+            System.out.print("Last name: ");
+            String surname = scanner.nextLine();
+            
+            System.out.print("Identification number: ");
+            String idNumber = scanner.nextLine();
+            
+            infoCollection.add(new PersonalInformation(firstName, surname, idNumber));
+        }
+        System.out.println("");
+        for (PersonalInformation p : infoCollection) {
+            System.out.println(p.getFirstName() + " " + p.getLastName());
+        }
     }
 }
